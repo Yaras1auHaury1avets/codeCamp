@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+}
+
+#menu
+{
+    background-color: white;
+    width: 500px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+#stats, #buttons, #monster_stats, #text {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.stat {
+    margin : 5px;
+}
+
+strong {
+    margin-left: 5px;
+}
+
+button {
+    background-color: orange;
+    
+    cursor: pointer;
+}
+
+#text {
+    color: white;
+    background-color: black;
+}
+
+#monster_stats {
+    background-color: red;
+    display : none;
+}
