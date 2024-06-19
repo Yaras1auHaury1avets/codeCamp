@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="vieport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <h3>Please fill out this form with the required information</h3>
+        <form method="post" action="https://xvideos.com">
+            <fieldset>
+                <label for="fname">Enter Your First Name: <input type="text" id="fname" name="fname" class="data" required></label>
+                <label for="lname">Enter Your Last Name: <input type="text" id="lname" name="lname" class="data" required></label>
+                <label for="email">Enter Your Email:<input type="email" id="email" name="email" class="data" required></label>
+                <label for="pass">Create a New Password: <input type="password" id="pass" name="pass" class="data" minlength="8" maxlength="20" pattern="[A-Za-z0-9]" required></label>
+                </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Account type (required)</legend>
+                <label for="personal"><input type="radio" id="personal" name="account-type" value="personal" checked>Personal</label>
+                <label for="business"><input type="radio" id="business" name="account-type" value="business">Business</label>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <label for="file">Upload a profile picture: <input type="file" id="file" name="file" class="data"></label>
+                <label for="age">Input your age (years): <input type="number" id="age" name="age" min="18" max="120" class="data" required></label>
+            
+                <label for="source">
+                    How did you hear about us?
+                    <select id="source" class="data">
+                        <option value="0">(select one)</option>
+                        <option value="1">Playboy</option>
+                        <option value="2">Hustler</option>
+                        <option value="3">PornHub</option>
+                        <option value="4">Other</option>
+                    </select>
+                </label>
+                <label for="bio">Provide a bio: <textarea rows="5" cols="40" placeholder="Print some shit..." class="data"></textarea></label>
+            </fieldset>
+            <fieldset>
+            <label for="check"><input type="checkbox" id="check" required>I accept the <a href="https://xvideos.com" target="_blank">terms and conditions</a></label>
+            <input type="submit" value="Submit" id="submit">
+            </fieldset>
+        </form>
+    </body>
+</html>

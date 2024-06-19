@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(0, 40, 70);
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+h1,h3 {
+    text-align: center;
+}
+
+form {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+fieldset {
+    border: none;
+}
+
+label {
+    display: block;
+}
+
+.data {
+   display: block; 
+   margin-top: 5px;
+   margin-bottom: 5px;
+   width: 100%;
+   background-color: black;
+   color:aliceblue
+}
+
+a {
+    color: aliceblue;
+}
+
+#submit {
+    display: block;
+    margin: 10px auto;
+    height: 30px;
+    width: 100px;
+    background-color: rgb(178, 165, 190);
+}
