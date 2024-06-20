@@ -1,0 +1,46 @@
+body {
+    background-image: url(https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2021/11/Total-War-Warhammer-3-Nurgle-Screenshot.jpg);
+font-family: Georgia, 'Times New Roman', Times, serif;
+background-size: 200%;
+}
+
+h1, p {
+    text-align: center;
+    
+}
+
+p {
+    font-style: italic;
+    font-weight: 900;
+}
+
+form {
+    margin : 0 25%;
+    background-color: rgba(148, 45, 45, 0.75);
+    color: aliceblue;
+    padding: 20px 40px;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.blocks {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+select {
+    height: 23px;
+  
+}
