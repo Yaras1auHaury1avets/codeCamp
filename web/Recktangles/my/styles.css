@@ -1,0 +1,42 @@
+#container {
+    width : 40%;
+    height: 90vh;
+    margin: 20px auto;
+    border : solid black 8vh;
+    padding : 8vh;
+}
+
+#recktangles {
+    width:  100%;
+    height : 100%;
+    background-color: rgb(143, 19, 19);
+    filter: blur(3px);
+    padding-top: 1%;
+}
+
+.item {
+    width: 95%;
+    height: 30%;
+    margin: 2% auto;
+}
+
+.one {
+    background-color: rgb(141, 129, 6);
+    filter: blur(1px);
+    transform: rotate(-0.4deg);
+    border-radius: 1px 5px 10px 14px;
+}
+
+.two {
+    background-color: rgb(227, 51, 49);
+    filter: blur(2px);
+    transform: rotate(0.2deg);
+    border-radius: 10px 15px 0px 4px;
+}
+
+.three {
+    background-color: rgb(28, 2, 5);
+    filter: blur(4px);
+    transform: rotate(0.5deg);
+    border-radius: 10px 25px 20px 44px;
+}
