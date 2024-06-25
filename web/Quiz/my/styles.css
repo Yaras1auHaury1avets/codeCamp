@@ -31,6 +31,11 @@ li {
     font-size: 20px;
 }
 
+li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
 body {
     margin: 0;
     background-color: beige;
