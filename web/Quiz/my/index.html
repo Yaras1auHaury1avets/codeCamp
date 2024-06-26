@@ -11,7 +11,7 @@
             <img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="shit pic" id="logo">
             <h1>HTML/CSS Quiz</h1>
             <nav>
-                <ul>
+                <ul id="list">
                     <li><a href="#info">INFO</a></li>
                     <li><a href="#html">HTML</a></li>
                     <li><a href="#css">CSS</a></li>
@@ -20,42 +20,51 @@
         </header>
         <main>
             <form id="quiz" method="post" action="https://www.xvideos.com">
-                <section>
-                    <h2 id="info">Student Info</h2>  
-                    <label for="name">Name: <input type="text" id="name" name="name"></label>  
-                    <label for="email">Email: <input type="email" id="email" name="email"></label> 
-                    <label for="birthday">Birthday: <input type="date" id="birthday" name="birthday"></label> 
+                <section id="info">
+                    <h2 >Student Info</h2> 
+                    <label class="entry">
+                    <label for="name" class="info">Name: </label>
+                    <input type="text" id="name" name="name" > 
+                    </label> 
+                    <label class="entry">
+                    <label for="email" class="info">Email: </label> 
+                    <input type="email" id="email" name="email">
+                    </label>
+                    <label class="entry">
+                    <label for="birthday" class="info">Birthday: </label>
+                    <input type="date" id="birthday" name="birthday"> 
+                    </label>
                 </section>
                 <section>
                     <h2 id="html">HTML</h2>   
                     <fieldset>
                         <legend>Question №1</legend>
-                        <label for="q1">The legend element represents a caption for the content of its parent fieldset element</label>
+                        <p>The legend element represents a caption for the content of its parent fieldset element</p>
                         <ul id="q1">
-                            <li><input type="radio" name="question1" value="true">True</li>
-                            <li><input type="radio" name="question1" value="false">False</li>
+                            <li><label><input type="radio" name="question1" value="true">True</label></li>
+                            <li><label><input type="radio" name="question1" value="false">False</label></li>
                         </ul>
                     </fieldset>
                     <fieldset>
                         <legend>Question №2</legend>
                         <label for="q2">A label element nesting an input element is required to have a for attribute with the same value as the input's id</label>
                         <ul id="q2">
-                            <li><input type="radio" name="question2" value="true">True</li>
-                            <li><input type="radio" name="question2" value="false">False</li>
+                            <li><label><input type="radio" name="question2" value="true">True</label></li>
+                            <li><label><input type="radio" name="question2" value="false">False</label></li>
                         </ul>
                     </fieldset> 
                 </section>
                 <section>
                     <h2 id="css">CSS</h2>    
-                    <label for="select">Can the CSS margin property accept negative values?</label>
+                    <label class="css-label" for="select">Can the CSS margin property accept negative values?</label>
                     <select id="select">
                         <option value="select">(select an option)</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
                     </select>
-                    <label for="textarea">Do you have any questions:
+                    <label for="textarea" class="css-label">Do you have any questions:
                     </label>
-                    <textarea id="textarea" rows="5" cols="15" placeholder="Write or die!"></textarea>
+                    <textarea id="textarea" rows="5" cols="35" placeholder="Write or die!"></textarea>
                 </section>
                 <button type="submit">Send</button>
             </form>
