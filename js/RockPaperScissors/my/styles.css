@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+#container {
+    width: 50%;
+    min-width: 300px;
+    margin: 10vh auto;
+    color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+#rules-button {
+    display: block;
+    width: 80%;
+    height: 10vh;
+    margin: 2vh auto;
+    border-radius: 10px;
+    border: 5px solid gold;
+}
+
+#rules {
+    width: 80%;
+    margin: 2vh auto;
+    border-radius: 10px;
+    color: black;
+    background-color: aliceblue;
+    
+}
+
+#scores {
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    text-align: center;
+}
+
+button:not(#rules-button){
+    background-color: gold;
+    width: 8vw;
+    height: 5vh;
+
+}
+
+#options {
+    width: 70%;
+    margin: 2vh auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#reset {
+    display: block;
+    width: 40%;
+    height: 5vh;
+    margin: 2vh auto;
+    background-color: gold;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
