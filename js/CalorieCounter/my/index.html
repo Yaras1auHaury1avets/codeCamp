@@ -9,7 +9,7 @@
     <body>
         <h1>Calorie Counter</h1>
         <div id="container">
-        <label for="budget">Budget</label><input type="number" id="budget" name="budget">
+        <label for="budget">Budget</label><input type="number" id="budget" name="budget" required>
         <fieldset>
             <legend>Breakfast</legend>
             <div id="breakfast"></div>
@@ -42,9 +42,10 @@
             <button type="button" id="addEntry">Add entry</button>
         </div>
         <div class="calculations">
-            <button type="button" id="calculate">Calculate Remaining Calories</button>
+            <button type="submit" id="calculate">Calculate Remaining Calories</button>
             <button type="reset" id="clear">Clear</button>
         </div>
+        <h2></h2>
         </div>
         <script src="script.js"></script>
     </body>
