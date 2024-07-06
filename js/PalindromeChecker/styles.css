@@ -1,0 +1,20 @@
+html {
+    background-color: #0a0a23;
+    color: aliceblue;
+}
+
+h1,h2 {
+    text-align: center;
+}
+
+p {
+    display: inline-block;
+}
+
+.input-container {
+    width: 50%;
+    margin: auto;
+  text-align: center;
+}
+
+
