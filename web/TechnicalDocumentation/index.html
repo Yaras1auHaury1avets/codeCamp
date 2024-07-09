@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Technical Documentation Page</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <aside>
+            <nav id="navbar">
+                <header>Arrays</header>
+                <ul>
+                    <li><a class="nav-link" href="#declaration">Declaration</a></li>
+                    <li><a class="nav-link" href="#internals">Internals</a></li>
+                    <li><a class="nav-link" href="#loops">Loops</a></li>
+                    <li><a class="nav-link" href="#tostring">toString</a></li>
+                    <li><a class="nav-link" href="#comparison">Comparison</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main id="main-doc">
+            <section class="main-section" id="declaration">
+                <header><h2>Declaration</h2></header>
+                <p>It is not convenient to use an object here, because it provides no methods to manage the order of elements. We can’t insert a new property “between” the existing ones. Objects are just not meant for such use. There exists a special data structure named Array, to store ordered collections.</p>
+                <p>There are two syntaxes for creating an empty array. Almost all the time, the second syntax is used. We can supply initial elements in the brackets.</p>
+                <code>let arr = new Array();
+                    let arr = [];
+                    let fruits = ["Apple", "Orange", "Plum"];
+                </code>
+                <p>The ways to misuse an array:</p>
+                <ul>
+                    <li>Add a non-numeric property like arr.test = 5</li>
+                    <li>Make holes, like: add arr[0] and then arr[1000] (and nothing between them)</li>
+                    <li>Fill the array in the reverse order, like arr[1000], arr[999]</li>
+                </ul>
+            </section>
+            <section class="main-section" id="internals">
+                <header><h2>Internals</h2></header>
+                <p>An array is a special kind of object. The square brackets used to access a property arr[0] actually come from the object syntax. That’s essentially the same as obj[key], where arr is the object, while numbers are used as keys.</p>
+                <p>They extend objects providing special methods to work with ordered collections of data and also the length property. But at the core it’s still an object. Remember, there are only eight basic data types in JavaScript (see the Data types chapter for more info). Array is an object and thus behaves like an object.</p>
+                <code>
+                    let fruits = ["Banana"]
+
+let arr = fruits; // copy by reference (two variables reference the same array)
+
+alert( arr === fruits ); // true
+
+arr.push("Pear"); // modify the array by reference
+
+alert( fruits ); // Banana, Pear - 2 items now
+                </code>
+            </section>    
+            <section class="main-section" id="3">
+                <header><h2>Loops</h2></header>
+                <p>One of the oldest ways to cycle array items is the for loop over indexes. But for arrays there is another form of loop, for..of:</p>
+                <code>
+                    let fruits = ["Apple", "Orange", "Plum"];
+// iterates over array elements
+for (let fruit of fruits) {
+  alert( fruit );
+}
+                </code>
+                <p>The for..of doesn’t give access to the number of the current element, just its value, but in most cases that’s enough. And it’s shorter.</p>
+            </section>
+            <section class="main-section" id="tostring">
+                <header><h2>toString</h2></header>
+                <p>Arrays have their own implementation of toString method that returns a comma-separated list of elements.</p>
+                <p>Arrays do not have Symbol.toPrimitive, neither a viable valueOf, they implement only toString conversion, so here [] becomes an empty string, [1] becomes "1" and [1,2] becomes "1,2". When the binary plus "+" operator adds something to a string, it converts it to a string as well, so the next step looks like this:</p>
+                <code>let arr = [1, 2, 3];
+                    alert( arr ); // 1,2,3
+                    alert( String(arr) === '1,2,3' ); // true
+                </code>
+            </section>
+            <section class="main-section" id="comparison">
+                <header><h2>Comparison</h2></header>
+                <p>Arrays in JavaScript, unlike some other programming languages, shouldn’t be compared with operator ==.This operator has no special treatment for arrays, it works with them as with any objects.</p>
+                <p>Let’s recall the rules:</p>
+                <ul>
+                    <li>Two objects are equal == only if they’re references to the same object.</li>
+                    <li>If one of the arguments of == is an object, and the other one is a primitive, then the object gets converted to primitive, as explained in the chapter Object to primitive conversion.</li>
+                    <li>…With an exception of null and undefined that equal == each other and nothing else.</li>
+                </ul>
+                <p>The strict comparison === is even simpler, as it doesn’t convert types. So, if we compare arrays with ==, they are never the same, unless we compare two variables that reference exactly the same array.</p>
+                <code>
+                    alert( [] == [] ); // false
+alert( [0] == [0] ); // false
+                </code>
+            </section>
+        </main>
+    </body>
+</html>
