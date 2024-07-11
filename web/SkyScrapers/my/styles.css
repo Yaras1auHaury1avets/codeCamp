@@ -1,0 +1,125 @@
+html {
+box-sizing : border-box;
+}
+
+*, *::before, *::after {
+box-sizing: inherit;
+border: 1px solid black;
+}
+
+:root{
+    --building-color1: rgb(219, 25, 219);
+    --building-color2: rgb(18, 238, 18);
+    --building-color3: rgb(198, 67, 67);
+    --window-color1:    rgb(230, 213, 230);
+    --window-color2:    rgb(170, 238, 170);
+    --window-color3:    rgb(213, 123, 123)
+}
+
+body {
+    margin: 0;
+}
+
+.sky {
+    height: 100vh;
+    background: radial-gradient(circle closest-corner at 15% 15%, gold 30%, rgb(107, 107, 205) );
+}
+
+.buildings {
+    height: 100%;
+    width: 100%;
+display: flex;
+align-items: flex-end;
+justify-content: space-evenly;
+margin: 0;
+}
+
+.house {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bb1 {
+    width: 10%;
+    height: 70%;
+}
+
+.bb1a {
+    width: 70%;
+    height: 10%;
+    background: linear-gradient(var(--building-color1) 75%, var(--window-color1));
+}
+
+.bb1b {
+    width: 80%;
+    height: 10%;
+    background: linear-gradient(var(--building-color1) 75%, var(--window-color1));
+}
+
+.bb1c {
+    width: 90%;
+    height: 10%;
+    background: linear-gradient(var(--building-color1) 75%, var(--window-color1));
+}
+
+.bb1d {
+    width: 100%;
+    height: 70%;
+    background-color: var(--building-color1);
+}
+
+.bb2 {             
+    width: 10%;
+    height: 50%;
+}
+
+.bb2a {
+height: 5%;
+width: 100%;
+border-bottom: 1vw solid var( --building-color2);
+border-left: 5vw solid transparent;
+border-right: 5vw solid transparent;
+}
+
+.bb2b {
+height: 95%;
+width: 100%;
+background: repeating-linear-gradient(var( --building-color2) 0%, var( --building-color2) 7%, var(--window-color2) 7%, var(--window-color2) 10%);
+}
+
+.bb3 {
+    width: 10%;
+    height: 55%;
+    background: repeating-linear-gradient(90deg, var(--building-color3) 60%, var(--window-color3) 75%);
+}
+
+.bb4 {
+    width: 9%;
+    height: 47%;
+    position: relative;
+    left: 5%;
+}
+
+.bb4b{
+    width: 100%;
+    height: 90%;
+    background:   
+    linear-gradient(var(--window-color1) 0%, var(--window-color1) 10%, var(--building-color1) 10%, var(--building-color1) 34%),
+    linear-gradient(90deg,  var(--building-color1) 0%, var(--building-color1) 10%, var(--window-color1) 10%, var(--window-color1) 40%);
+}
+
+.bb4a{
+    width: 100%;
+    height: 10%;
+    border-bottom: 4vh solid var(--building-color1);
+    border-right: 8.3vw solid transparent;
+}
+
+.bb5 {
+    width: 15%;
+    height: 60%;
+    
+}
+
+
