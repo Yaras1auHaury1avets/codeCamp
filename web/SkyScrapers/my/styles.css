@@ -11,9 +11,11 @@ border: 1px solid black;
     --building-color1: rgb(219, 25, 219);
     --building-color2: rgb(18, 238, 18);
     --building-color3: rgb(198, 67, 67);
+    --building-color4:  rgb(131, 131, 217);
     --window-color1:    rgb(230, 213, 230);
     --window-color2:    rgb(170, 238, 170);
-    --window-color3:    rgb(213, 123, 123)
+    --window-color3:    rgb(213, 123, 123);
+    --window-color4: rgb(36, 36, 144);
 }
 
 body {
@@ -26,7 +28,7 @@ body {
 }
 
 .buildings {
-    height: 100%;
+    height: 100vh;
     width: 100%;
 display: flex;
 align-items: flex-end;
@@ -104,9 +106,19 @@ background: repeating-linear-gradient(var( --building-color2) 0%, var( --buildin
 .bb4b{
     width: 100%;
     height: 90%;
-    background:   
-    linear-gradient(var(--window-color1) 0%, var(--window-color1) 10%, var(--building-color1) 10%, var(--building-color1) 34%),
-    linear-gradient(90deg,  var(--building-color1) 0%, var(--building-color1) 10%, var(--window-color1) 10%, var(--window-color1) 40%);
+    background-color: var(--building-color1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.winb4 {
+    width: 30%;
+    height: 15%;
+    background-color: var(--window-color1);
+    margin: 5%;
+    border-radius: 46%;
 }
 
 .bb4a{
@@ -119,7 +131,77 @@ background: repeating-linear-gradient(var( --building-color2) 0%, var( --buildin
 .bb5 {
     width: 15%;
     height: 60%;
-    
 }
 
+.bb5a {
+    width: 3%;
+    height: 10%;
+    background-color: var(--building-color4);
+}
 
+.bb5b {
+    width: 80%;
+    height: 5%;
+    background-color: var(--building-color4);
+}
+
+.bb5c {
+    width: 100%;
+    height: 85%;
+    background-color: var(--building-color4);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.winb5 {
+    width: 20%;
+    height: 90%;
+    background-color: var(--window-color4);
+}
+
+.fb {
+    position: absolute;
+    top: 0;
+
+}
+
+.fb1 {
+    width: 11%;
+    height: 60vh;
+}
+
+.fb1a {
+    width: 40%;
+    height: 10%;
+}
+
+.fb1b {
+    width: 60%;
+    height: 10%;
+}
+
+.fb1c {
+    width: 100%;
+    height: 80%;
+}
+
+.fb2 {
+    width: 11%;
+    height: 45vh;
+}
+
+.fb3 {
+    width: 13%;
+    height: 40vh;
+}
+
+.fb4 {
+    width: 13%;
+    height: 35vh;
+}
+
+.fb5 {
+    width: 12%;
+    height: 47vh;
+}
