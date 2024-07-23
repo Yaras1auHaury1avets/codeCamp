@@ -3,3 +3,4 @@ https://www.codewars.com/kata/5277c8a221e209d3f6000b56/train/javascript
 https://www.codewars.com/kata/56a5d994ac971f1ac500003e
 https://www.codewars.com/kata/57b06f90e298a7b53d000a86
 https://www.codewars.com/kata/52c31f8e6605bcc646000082
+https://www.codewars.com/kata/57814d79a56c88e3e0000786/train/javascript
