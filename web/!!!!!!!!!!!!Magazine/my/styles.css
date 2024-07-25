@@ -1,0 +1,29 @@
+html {
+box-sizing : border-box;
+}
+
+
+*, *::before, *::after {
+box-sizing: inherit;
+margin: 0;
+}
+
+.container {
+    background-color: rgb(20, 30, 40);
+}
+
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.camp-logo{
+    height: 70vh;
+    display: block;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    color: rgb(221, 3, 3);
+}

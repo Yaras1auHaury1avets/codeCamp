@@ -1,0 +1,73 @@
+html {
+box-sizing : border-box;
+}
+
+
+*, *::before, *::after {
+box-sizing: inherit;
+margin: 0
+}
+
+body {
+    background: url(https://mil.in.ua/wp-content/uploads/2023/10/02-5-1.jpg) no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: 2px solid gold;
+}
+
+.header-logo {
+    height: 48px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+li {
+    margin-right: 20px;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    width: 60%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+h1, p {
+    text-align: center;
+}
+
+h1 p {
+    font-style: oblique;
+    
+}
+
+
+@media (max-width: 500px){
+    body {
+   background-color: pink;     
+    }
+    
+}
+
+
+
+
